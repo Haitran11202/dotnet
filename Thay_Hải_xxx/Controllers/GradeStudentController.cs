@@ -10,6 +10,7 @@ namespace Thay_Hải_xxx.Controllers
         public static int _id;
         public static List<studentGrade> studentGrades = new List<studentGrade>();
 
+        
         [HttpPost]
         public IActionResult CreateStudentGrade(studentGrade student)
         {
@@ -17,9 +18,9 @@ namespace Thay_Hải_xxx.Controllers
             {
                 var result = new studentGrade()
                 {
-                    id = ++_id,
-                    idSV = student.idSV,
-                    idGrade = student.idGrade,
+                    Id = ++_id,
+                    IdSV = student.IdSV,
+                    IdGrade = student.IdGrade,
                 };
                 return Ok(result);
             }

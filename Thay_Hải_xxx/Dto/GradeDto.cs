@@ -11,6 +11,6 @@ namespace Thay_Hải_xxx.Dto
 
         public int idGrade { get; set; }
 
-
+        
     }
 }

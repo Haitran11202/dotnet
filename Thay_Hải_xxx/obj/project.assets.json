@@ -460,25 +460,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\haitr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\cs\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx.csproj",
+      "projectUniqueName": "C:\\Users\\haitr\\Downloads\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx.csproj",
       "projectName": "Thay_Hải_xxx",
-      "projectPath": "C:\\cs\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\cs\\Thay_Hải_xxx\\Thay_Hải_xxx\\obj\\",
+      "projectPath": "C:\\Users\\haitr\\Downloads\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx.csproj",
+      "packagesPath": "C:\\Users\\haitr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\haitr\\Downloads\\Thay_Hải_xxx\\Thay_Hải_xxx\\Thay_Hải_xxx\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\haitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -525,7 +526,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
