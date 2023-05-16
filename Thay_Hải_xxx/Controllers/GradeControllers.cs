@@ -28,16 +28,16 @@ namespace Thay_Hải_xxx.Controllers
         }
 
         [HttpPost("post")]
-        public IActionResult CreateGrade(Grade input)
+        public IActionResult CreateGrade(AddGradeDto input)
         {
             try
             {
                 var result = new Grade()
                 {
                     id = ++_idgrade,
-                    tenLop = input.tenLop,
-                    maLop = input.maLop,
-                    maxSV = input.maxSV,
+                    tenLop = input.TenLop,
+                    maLop = input.MaLop,
+                    maxSV = input.MaxSV,
                 };
                 grade.Add(result);
                 return Ok(result);

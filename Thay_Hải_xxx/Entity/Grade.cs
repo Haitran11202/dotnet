@@ -13,6 +13,6 @@ namespace Thay_Hải_xxx.Entity
         public int maLop { get; set; }
         /*[MinLength(0, ErrorMessage ="số sinh viên tối thiếu là 0")]*/
         public int maxSV { get; set; }
-        public List<Student> Students { get; set; }
+        public List<Student> Students { get; set; } = new List<Student>();
     }
 }
