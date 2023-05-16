@@ -1,4 +1,7 @@
 
+using Thay_Hải_xxx.Services.Implements;
+using Thay_Hải_xxx.Services.Interfaces;
+
 namespace Thay_Hải_xxx
 {
     public class Program
@@ -10,6 +13,7 @@ namespace Thay_Hải_xxx
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<IStudentServices,StudentServices>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

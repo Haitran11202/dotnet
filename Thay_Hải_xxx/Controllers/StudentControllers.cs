@@ -1,25 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Thay_Hải_xxx.Dto;
 using Thay_Hải_xxx.Entity;
+using Thay_Hải_xxx.Services.Interfaces;
 
 namespace Thay_Hải_xxx.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class Sinh_vien_controllers : ControllerBase
+    public class StudentControllers : ControllerBase
     {
-        public static List<Student> student = new List<Student>();
-        public static int _id;
 
-        public static List<Grade> grades = new List<Grade>();
+
+        private readonly IStudentServices studentServices;
 
         [HttpGet]
         public IActionResult GetSinhvien()
         {
             try
             {
-                var result = student.ToList();
+                var result = studentServices.GetStudent();
                 return Ok(result);
             }
             catch (Exception)
@@ -34,14 +34,7 @@ namespace Thay_Hải_xxx.Controllers
         {
             try
             {
-                var result = new Student
-                {
-                    id = ++_id,
-                    TenSV = input.TenSV,
-                    MaSV = input.MaSV,
-                    Dob = input.Dob,
-                };
-                student.Add(result);
+                var result = studentServices.CreateSinhVien(input);
                 return Ok(result);
             }
             catch (Exception)
